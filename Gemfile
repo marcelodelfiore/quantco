@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 ruby '2.4.0'
 
+gem 'loofah ~> 2.2.3'
 gem 'bundler', '~> 1.14', '>= 1.14.6'
 gem 'rails'
 gem 'sass-rails'
