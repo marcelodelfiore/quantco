@@ -1,0 +1,11 @@
+version: '2'
+volumes:
+  gems:
+services:
+  web:
+    build: .
+    volumes:
+      - .:/opt/quantco
+      - gems:/usr/local/bundle
+    ports:
+      - "3000:3000"

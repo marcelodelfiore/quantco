@@ -1,0 +1,29 @@
+-# = line_chart @pair.residue.residuos
+<br> <br/>
+<br> <br/>
+.container
+  .col-xs-2.top15
+    %a.btn.btn-primary{href: "javascript:history.back()"} Voltar
+  .col-xs-8.text-center
+    %h1
+      = "#{@residue.ativo_indep} - #{@residue.ativo_dep}"
+  .col-xs-12.well.well-sm
+    .col-xs-12.col-sm-3
+      %strong
+        Data:
+      = @residue.data.strftime("%d/%m/%Y")
+    .col-xs-12.col-sm-3
+      %strong
+        Ativo Independente:
+      = @residue.ativo_indep
+    .col-xs-12.col-sm-3
+      %strong
+        Ativo Dependente:
+      = @residue.ativo_dep
+    .col-xs-12.col-sm-3
+      %strong
+        Período:
+      = "#{@residue.periodo} dias"
+
+.container.top10
+  = high_chart("residue_chart",get_chart(@chart_data))

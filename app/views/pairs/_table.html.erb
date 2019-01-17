@@ -1,0 +1,58 @@
+<div class="panel-body table-responsive">
+	<div class="pull-right">
+		<%= paginate @pairs%>
+	</div>
+	<table class="table table-hover">
+		<thead>
+			<tr>
+				<th class="text-center">
+					<%= sort_link(@q, :ativo_indep, 'Ativo Independente', default_order: :asc) %>
+				</th>
+				<th class="text-center">
+					Ativo Dependente
+				</th>
+				<th class="text-center" title="A ponta comprada está marcada em verde a a ponta vendida marcada em vermelho">
+					O que Operar
+				</th>
+				<th class="text-center">
+					Nível de Confiança
+				</th>
+				<th class="text-center">
+					&#946
+				</th>
+				<th class="text-center">
+					Período
+				</th>
+				<th class="text-center">
+					Meia Vida
+				</th>
+				<th class="text-center">
+					ADF
+				</th>
+			</tr>
+		</thead>
+		<tbody>
+			<% @pairs.each do |pair| %>
+				<tr>
+					<td class="text-center"><%= pair.ativo_indep %></td>
+					<td class="text-center"><%= pair.ativo_dep %></td>
+					<td class="text-center" style="nowrap;"> 
+						<% if pair.sinal_entrada.to_s == "1" %>
+							<font	color="green"><%= pair.ativo_indep%> </font> / <font color="red"><%= pair.ativo_dep%> </font>
+						<%	elsif pair.sinal_entrada.to_s == "4" %>
+								<font	color="green"> <%= pair.ativo_dep%> </font> / <font color="red"><%=pair.ativo_indep%> </font>
+						<%	else %>
+							<%= "-"%>
+						<% end %>
+					</td>
+					<td class="text-center"><%= pair.nivel_confianca.to_s%></td>
+					<td class="text-center"><%= pair.beta_ativo_dep%></td>
+					<td class="text-center"><%= pair.periodo.to_s%></td>
+					<td class="text-center"><%= pair.meia_vida%></td>
+					<td class="text-center"><%= pair.ADF_result%></td>
+					<td class="text-center"><%= link_to image_tag('chart.png', class: "icon-table"), residue_path(pair.residue) unless pair.residue.nil?%></td>
+				</tr>
+			<% end %>
+		</tbody>
+	</table>
+</div>

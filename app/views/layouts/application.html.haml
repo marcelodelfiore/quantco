@@ -1,0 +1,27 @@
+%html
+  %head
+    %title Cointegracao
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+    %link{'href'=>'https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800', 'rel'=>'stylesheet', 'type'=>'text/css'}
+    %link{'href'=>'https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic', 'rel'=>'stylesheet', 'type'=>'text/css'}
+%body
+  - unless flash[:notice].blank?
+    %p.notice
+      = notice
+  - unless flash[:alert].blank?
+    %p.alert
+      = alert
+  %nav#mainNav.navbar.navbar-default.navbar-fixed-top
+    .container-fluid
+      .navbar-header
+        %a.navbar-brand.page-scroll
+          =link_to image_tag('logo quantco.png', size: "100x70"), root_path
+      .navbar-collapse
+        %ul.nav.navbar-nav.navbar-right
+          %li
+          - if user_signed_in?
+            %strong
+            = current_user.email
+  = yield

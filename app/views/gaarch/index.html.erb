@@ -1,0 +1,38 @@
+<h1 align="center">Modelo GARCH</h1>
+<h2 align="center">Estimativa Diária da Volatilidade - <%= @current_date[6,7] + "/" + @current_date[5] + "/" + @current_date[0,4]%> </h2>
+
+<div class="panel-body table-responsive">
+	<table class="table table-hover">
+		<thead>
+			<tr>
+				<th class="text-center">
+					<%= sort_link(@q, :stock, 'Ativo', default_order: :asc) %>
+				</th>
+				</th>
+				<th class="text-center">
+					Anual (%)
+				</th>
+				<th class="text-center">
+					Anual Curta - 10 dias (%)
+				</th>
+				<th class="text-center">
+					Diária (%)
+				</th>
+				<th class="text-center">
+					Diária Curta - 10 dias (%)
+				</th>
+			</tr>
+		</thead>
+		<tbody>
+			<% @gaarch.each do |gaarch| %>
+				<tr>
+					<td class="text-center"><%= gaarch.stock %></td>
+					<td class="text-center"><%= gaarch.annual_gaarch_vol %></td>
+					<td class="text-center"><%= gaarch.annual_narrow_gaarch_vol %></td>
+					<td class="text-center"><%= gaarch.daily_gaarch_vol %></td>
+					<td class="text-center"><%= gaarch.daily_narrow_gaarch_vol %></td>
+				</tr>
+			<% end %>
+		</tbody>
+	</table>
+</div>

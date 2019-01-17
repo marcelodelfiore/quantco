@@ -1,0 +1,620 @@
+W, [2017-03-27T08:11:13.661290 #5503]  WARN -- : Creating scope :order. Overwriting existing method Pair.order.
+I, [2017-03-27T08:11:15.442748 #5503]  INFO -- : Started GET "/" for 127.0.0.1 at 2017-03-27 08:11:15 -0300
+I, [2017-03-27T08:11:15.445390 #5503]  INFO -- : Processing by StaticPagesController#index as HTML
+I, [2017-03-27T08:11:15.452884 #5503]  INFO -- :   Rendering static_pages/index.html.haml within layouts/application
+I, [2017-03-27T08:11:20.294595 #5503]  INFO -- :   Rendered static_pages/index.html.haml within layouts/application (4841.6ms)
+I, [2017-03-27T08:11:20.304970 #5503]  INFO -- : Completed 200 OK in 4859ms (Views: 4854.2ms)
+I, [2017-03-27T08:11:20.308752 #5503]  INFO -- : Started GET "/assets/application-f52c67786de1509b25b6192a5eb5725a23be95a9577830da87b555ac97470c31.js" for 127.0.0.1 at 2017-03-27 08:11:20 -0300
+I, [2017-03-27T08:11:20.313724 #5503]  INFO -- : Started GET "/assets/application-299f58e21c200a07b8c05ef26f357ace3286e15f9e6157a669e1d345a11631b0.css" for 127.0.0.1 at 2017-03-27 08:11:20 -0300
+I, [2017-03-27T08:11:20.318958 #5503]  INFO -- : Started GET "/assets/logo%20quantco-af7d86f5ceb5af4e2f9832144b8e044e7889392057859f850f13742fc0ec698a.png" for 127.0.0.1 at 2017-03-27 08:11:20 -0300
+I, [2017-03-27T08:11:20.393184 #5503]  INFO -- : Started GET "/assets/header-012975bc0328ef43ba0535ef270cde7d9daa108dd20a707e487d278959bcb5f9.jpg" for 127.0.0.1 at 2017-03-27 08:11:20 -0300
+I, [2017-03-27T08:11:23.190968 #5503]  INFO -- : Started GET "/pairs" for 127.0.0.1 at 2017-03-27 08:11:23 -0300
+I, [2017-03-27T08:11:23.212479 #5503]  INFO -- : Started GET "/users/sign_in" for 127.0.0.1 at 2017-03-27 08:11:23 -0300
+I, [2017-03-27T08:11:23.213892 #5503]  INFO -- : Processing by Devise::SessionsController#new as HTML
+I, [2017-03-27T08:11:23.217933 #5503]  INFO -- :   Rendering devise/sessions/new.html.erb within layouts/application
+I, [2017-03-27T08:11:23.222086 #5503]  INFO -- :   Rendered devise/shared/_links.html.erb (1.0ms)
+I, [2017-03-27T08:11:23.222197 #5503]  INFO -- :   Rendered devise/sessions/new.html.erb within layouts/application (4.2ms)
+I, [2017-03-27T08:11:23.230229 #5503]  INFO -- : Completed 200 OK in 16ms (Views: 14.9ms)
+I, [2017-03-27T08:11:26.208202 #5503]  INFO -- : Started POST "/users/sign_in" for 127.0.0.1 at 2017-03-27 08:11:26 -0300
+I, [2017-03-27T08:11:26.210826 #5503]  INFO -- : Processing by Devise::SessionsController#create as HTML
+I, [2017-03-27T08:11:26.211016 #5503]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"fPv65vzcqiiiO0AvawLENt3MZRMSOtH6f1oK8i0n6cyIqohSGwOwnAYPTFpYTdxY8Q8WwXhS6sIRAr3zNu4EHQ==", "user"=>{"email"=>"marcelodelfiore@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+D, [2017-03-27T08:11:26.214339 #5503] DEBUG -- : MONGODB | Topology type 'unknown' initializing.
+D, [2017-03-27T08:11:26.214578 #5503] DEBUG -- : MONGODB | Server ds119618.mlab.com:19618 initializing.
+D, [2017-03-27T08:11:27.570427 #5503] DEBUG -- : MONGODB | Server description for ds119618.mlab.com:19618 changed from 'unknown' to 'primary'.
+D, [2017-03-27T08:11:27.570588 #5503] DEBUG -- : MONGODB | Server ds119618-a.mlab.com:19618 initializing.
+D, [2017-03-27T08:11:28.203376 #5503] DEBUG -- : MONGODB | Server description for ds119618-a.mlab.com:19618 changed from 'unknown' to 'primary'.
+D, [2017-03-27T08:11:28.203601 #5503] DEBUG -- : MONGODB | Topology type 'unknown' changed to type 'replica set'.
+D, [2017-03-27T08:11:28.203934 #5503] DEBUG -- : MONGODB | There was a change in the members of the 'replica set' topology.
+D, [2017-03-27T08:11:28.204818 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"marcelodelfiore@gmail.com"}, "limit"=>1, "sort"=>{"_id"=>1}, "singleBatch"=>true}
+D, [2017-03-27T08:11:28.475093 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.saslStart | STARTED | {}
+D, [2017-03-27T08:11:28.611827 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.saslStart | SUCCEEDED | 0.136576601s
+D, [2017-03-27T08:11:28.617199 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.saslContinue | STARTED | {}
+D, [2017-03-27T08:11:28.752553 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.saslContinue | SUCCEEDED | 0.13525527199999998s
+D, [2017-03-27T08:11:28.752764 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.saslContinue | STARTED | {}
+D, [2017-03-27T08:11:28.888126 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.saslContinue | SUCCEEDED | 0.135222707s
+D, [2017-03-27T08:11:29.023605 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.818506721s
+D, [2017-03-27T08:11:29.337087 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.update | STARTED | {"update"=>"users", "updates"=>[{"q"=>{"_id"=>BSON::ObjectId('58c736e3459ba90c2a6e1247')}, "u"=>{"$set"=>{"last_sign_in_at"=>2017-03-27 11:01:54 UTC, "current_sign_in_at"=>2017-03-27 11:11:29 UTC, "sign_in_count"=>53}}, "multi"=>false, "upsert"=>false...
+D, [2017-03-27T08:11:29.472222 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.update | SUCCEEDED | 0.13501271s
+I, [2017-03-27T08:11:29.475392 #5503]  INFO -- : Redirected to http://0.0.0.0:3000/pairs
+I, [2017-03-27T08:11:29.475475 #5503]  INFO -- : Completed 302 Found in 3264ms
+I, [2017-03-27T08:11:29.478111 #5503]  INFO -- : Started GET "/pairs" for 127.0.0.1 at 2017-03-27 08:11:29 -0300
+D, [2017-03-27T08:11:29.479349 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('58c736e3459ba90c2a6e1247')}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:11:29.614424 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.13498446400000003s
+I, [2017-03-27T08:11:29.615356 #5503]  INFO -- : Processing by PairsController#index as HTML
+D, [2017-03-27T08:11:29.616832 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Pairs", "filter"=>{}, "sort"=>{"_id"=>-1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:11:29.751859 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.134926708s
+D, [2017-03-27T08:11:29.887589 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.count | STARTED | {"count"=>"Pairs", "query"=>{}}
+D, [2017-03-27T08:11:30.022387 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.count | SUCCEEDED | 0.134654307s
+D, [2017-03-27T08:11:30.157634 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.count | STARTED | {"count"=>"Pairs", "query"=>{}}
+D, [2017-03-27T08:11:30.292504 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.count | SUCCEEDED | 0.13474246099999998s
+D, [2017-03-27T08:11:30.428013 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.count | STARTED | {"count"=>"Pairs", "query"=>{}}
+D, [2017-03-27T08:11:30.563103 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.count | SUCCEEDED | 0.134861592s
+D, [2017-03-27T08:11:30.698747 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.count | STARTED | {"count"=>"Pairs", "query"=>{}}
+D, [2017-03-27T08:11:30.833702 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.count | SUCCEEDED | 0.134817698s
+D, [2017-03-27T08:11:30.968930 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.count | STARTED | {"count"=>"Pairs", "query"=>{}}
+D, [2017-03-27T08:11:31.103771 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.count | SUCCEEDED | 0.13469542399999998s
+D, [2017-03-27T08:11:31.239075 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.count | STARTED | {"count"=>"Pairs", "query"=>{}}
+D, [2017-03-27T08:11:31.374254 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.count | SUCCEEDED | 0.134978686s
+D, [2017-03-27T08:11:31.509694 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.count | STARTED | {"count"=>"Pairs", "query"=>{}}
+D, [2017-03-27T08:11:31.644751 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.count | SUCCEEDED | 0.13489274499999998s
+D, [2017-03-27T08:11:31.780321 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.count | STARTED | {"count"=>"Pairs", "query"=>{}}
+D, [2017-03-27T08:11:31.915172 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.count | SUCCEEDED | 0.13471697s
+I, [2017-03-27T08:11:31.917864 #5503]  INFO -- :   Rendering pairs/index.html.haml within layouts/application
+D, [2017-03-27T08:11:32.056074 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.count | STARTED | {"count"=>"Pairs", "query"=>{}}
+D, [2017-03-27T08:11:32.191296 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.count | SUCCEEDED | 0.135051276s
+I, [2017-03-27T08:11:32.192941 #5503]  INFO -- :   Rendered pairs/_filter_form.html.haml (273.8ms)
+D, [2017-03-27T08:11:32.330948 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.count | STARTED | {"count"=>"Pairs", "query"=>{"data_inicial"=>"20170324"}}
+D, [2017-03-27T08:11:32.466345 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.count | SUCCEEDED | 0.135184938s
+D, [2017-03-27T08:11:32.506983 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Pairs", "filter"=>{"data_inicial"=>"20170324"}, "limit"=>25, "skip"=>0, "sort"=>{"ativo_indep"=>1, "ativo_dep"=>1, "ADF_result"=>1}}
+D, [2017-03-27T08:11:32.647294 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.140055742s
+D, [2017-03-27T08:11:32.649728 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"BBAS3", "data_inicial"=>"20170324", "periodo"=>160}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:11:32.785649 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.13573821800000002s
+D, [2017-03-27T08:11:32.788384 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"BBAS3", "data_inicial"=>"20170324", "periodo"=>160}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:11:32.923782 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.135276309s
+D, [2017-03-27T08:11:32.924768 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"BBAS3", "data_inicial"=>"20170324", "periodo"=>200}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:11:33.059959 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.135103284s
+D, [2017-03-27T08:11:33.060911 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"BBAS3", "data_inicial"=>"20170324", "periodo"=>200}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:11:33.196481 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.135464373s
+D, [2017-03-27T08:11:33.197752 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"BBAS3", "data_inicial"=>"20170324", "periodo"=>120}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:11:33.333539 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.135586887s
+D, [2017-03-27T08:11:33.336182 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"BBAS3", "data_inicial"=>"20170324", "periodo"=>120}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:11:33.471894 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.135502858s
+D, [2017-03-27T08:11:33.474063 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"BBAS3", "data_inicial"=>"20170324", "periodo"=>180}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:11:33.609798 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.135522011s
+D, [2017-03-27T08:11:33.611813 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"BBAS3", "data_inicial"=>"20170324", "periodo"=>180}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:11:33.747212 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.13527214599999998s
+D, [2017-03-27T08:11:33.748147 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"BBAS3", "data_inicial"=>"20170324", "periodo"=>220}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:11:33.883981 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.135708143s
+D, [2017-03-27T08:11:33.885648 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"BBAS3", "data_inicial"=>"20170324", "periodo"=>220}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:11:34.021077 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.13529845199999999s
+D, [2017-03-27T08:11:34.022073 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"BBSE3", "data_inicial"=>"20170324", "periodo"=>120}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:11:34.159840 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.137674342s
+D, [2017-03-27T08:11:34.160798 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"BBSE3", "data_inicial"=>"20170324", "periodo"=>120}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:11:34.296370 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.135476392s
+D, [2017-03-27T08:11:34.297378 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"BBSE3", "data_inicial"=>"20170324", "periodo"=>160}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:11:34.432743 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.135263626s
+D, [2017-03-27T08:11:34.434037 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"BBSE3", "data_inicial"=>"20170324", "periodo"=>160}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:11:34.569796 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.135577054s
+D, [2017-03-27T08:11:34.576353 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"BBSE3", "data_inicial"=>"20170324", "periodo"=>140}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:11:34.712005 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.135493443s
+D, [2017-03-27T08:11:34.712890 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"BBSE3", "data_inicial"=>"20170324", "periodo"=>140}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:11:34.848217 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.13522872s
+D, [2017-03-27T08:11:34.849197 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"BBSE3", "data_inicial"=>"20170324", "periodo"=>200}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:11:34.984985 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.13567618199999998s
+D, [2017-03-27T08:11:34.986101 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"BBSE3", "data_inicial"=>"20170324", "periodo"=>200}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:11:35.121933 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.13566221199999998s
+D, [2017-03-27T08:11:35.123912 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"BBSE3", "data_inicial"=>"20170324", "periodo"=>220}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:11:35.260188 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.136117521s
+D, [2017-03-27T08:11:35.261638 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"BBSE3", "data_inicial"=>"20170324", "periodo"=>220}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:11:35.397639 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.13578951s
+D, [2017-03-27T08:11:35.400078 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"BBSE3", "data_inicial"=>"20170324", "periodo"=>180}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:11:35.535888 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.135600212s
+D, [2017-03-27T08:11:35.537888 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"BBSE3", "data_inicial"=>"20170324", "periodo"=>180}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:11:35.673674 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.135626099s
+D, [2017-03-27T08:11:35.675074 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"CIEL3", "data_inicial"=>"20170324", "periodo"=>160}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:11:35.814489 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.13929939s
+D, [2017-03-27T08:11:35.815403 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"CIEL3", "data_inicial"=>"20170324", "periodo"=>160}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:11:35.950939 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.13544313800000002s
+D, [2017-03-27T08:11:35.951874 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"CIEL3", "data_inicial"=>"20170324", "periodo"=>200}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:11:36.087502 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.135520056s
+D, [2017-03-27T08:11:36.088445 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"CIEL3", "data_inicial"=>"20170324", "periodo"=>200}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:11:36.224545 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.135885587s
+D, [2017-03-27T08:11:36.226922 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"CIEL3", "data_inicial"=>"20170324", "periodo"=>180}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:11:36.362918 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.13579255699999998s
+D, [2017-03-27T08:11:36.364574 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"CIEL3", "data_inicial"=>"20170324", "periodo"=>180}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:11:36.500594 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.135798793s
+D, [2017-03-27T08:11:36.503000 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"CMIG4", "data_inicial"=>"20170324", "periodo"=>100}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:11:36.639377 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.136108478s
+D, [2017-03-27T08:11:36.641748 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"CMIG4", "data_inicial"=>"20170324", "periodo"=>100}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:11:36.777616 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.135714533s
+D, [2017-03-27T08:11:36.778625 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"CMIG4", "data_inicial"=>"20170324", "periodo"=>140}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:11:36.914535 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.135811212s
+D, [2017-03-27T08:11:36.915442 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"CMIG4", "data_inicial"=>"20170324", "periodo"=>140}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:11:37.051200 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.13567117099999998s
+D, [2017-03-27T08:11:37.052088 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"CMIG4", "data_inicial"=>"20170324", "periodo"=>160}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:11:37.187719 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.13554296s
+D, [2017-03-27T08:11:37.188598 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"CMIG4", "data_inicial"=>"20170324", "periodo"=>160}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:11:37.324219 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.135533433s
+D, [2017-03-27T08:11:37.325095 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"ECOR3", "data_inicial"=>"20170324", "periodo"=>120}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:11:37.461035 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.135851897s
+D, [2017-03-27T08:11:37.461927 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"ECOR3", "data_inicial"=>"20170324", "periodo"=>120}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:11:37.598025 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.13598874600000002s
+D, [2017-03-27T08:11:37.599154 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"ECOR3", "data_inicial"=>"20170324", "periodo"=>160}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:11:37.735360 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.13599068s
+D, [2017-03-27T08:11:37.737799 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"ECOR3", "data_inicial"=>"20170324", "periodo"=>160}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:11:37.873773 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.13582582499999998s
+D, [2017-03-27T08:11:37.874715 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"ECOR3", "data_inicial"=>"20170324", "periodo"=>180}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:11:38.011012 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.13617031899999998s
+D, [2017-03-27T08:11:38.012545 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"ECOR3", "data_inicial"=>"20170324", "periodo"=>180}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:11:38.148712 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.136018878s
+D, [2017-03-27T08:11:38.150158 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"ECOR3", "data_inicial"=>"20170324", "periodo"=>250}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:11:38.286348 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.136001506s
+D, [2017-03-27T08:11:38.288637 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"ECOR3", "data_inicial"=>"20170324", "periodo"=>250}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:11:38.362491 #5503] DEBUG -- : MONGODB | Server description for ds119618-a.mlab.com:19618 changed from 'unknown' to 'primary'.
+D, [2017-03-27T08:11:38.362745 #5503] DEBUG -- : MONGODB | Server ds119618.mlab.com:19618 connection closed.
+D, [2017-03-27T08:11:38.424920 #5503] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.136118489s
+D, [2017-03-27T08:11:38.426191 #5503] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"ECOR3", "data_inicial"=>"20170324", "periodo"=>200}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:11:38.742276 #5503] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.saslStart | STARTED | {}
+D, [2017-03-27T08:11:38.901835 #5503] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.saslStart | SUCCEEDED | 0.159426455s
+D, [2017-03-27T08:11:38.907477 #5503] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.saslContinue | STARTED | {}
+D, [2017-03-27T08:11:39.065454 #5503] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.saslContinue | SUCCEEDED | 0.157866498s
+D, [2017-03-27T08:11:39.065724 #5503] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.saslContinue | STARTED | {}
+D, [2017-03-27T08:11:39.223741 #5503] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.saslContinue | SUCCEEDED | 0.15789604200000001s
+D, [2017-03-27T08:11:39.398157 #5503] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.97184877s
+D, [2017-03-27T08:11:39.399353 #5503] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"ECOR3", "data_inicial"=>"20170324", "periodo"=>200}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:11:39.558897 #5503] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.159380171s
+D, [2017-03-27T08:11:39.561001 #5503] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"KROT3", "data_inicial"=>"20170324", "periodo"=>200}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:11:39.721066 #5503] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.159886569s
+D, [2017-03-27T08:11:39.722339 #5503] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"KROT3", "data_inicial"=>"20170324", "periodo"=>200}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:11:39.882193 #5503] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.159673881s
+D, [2017-03-27T08:11:39.884246 #5503] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"KROT3", "data_inicial"=>"20170324", "periodo"=>180}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:11:40.043689 #5503] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.159270972s
+D, [2017-03-27T08:11:40.044644 #5503] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"KROT3", "data_inicial"=>"20170324", "periodo"=>180}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:11:40.203607 #5503] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.15887485499999998s
+D, [2017-03-27T08:11:40.204528 #5503] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"KROT3", "data_inicial"=>"20170324", "periodo"=>140}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:11:40.363715 #5503] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.159101968s
+D, [2017-03-27T08:11:40.364676 #5503] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"KROT3", "data_inicial"=>"20170324", "periodo"=>140}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:11:40.523704 #5503] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.15891779900000003s
+I, [2017-03-27T08:11:40.535031 #5503]  INFO -- :   Rendered pairs/_table.html.haml (8341.6ms)
+I, [2017-03-27T08:11:40.535127 #5503]  INFO -- :   Rendered pairs/index.html.haml within layouts/application (8617.2ms)
+I, [2017-03-27T08:11:40.542357 #5503]  INFO -- : Completed 200 OK in 10927ms (Views: 8626.1ms)
+I, [2017-03-27T08:11:40.587629 #5503]  INFO -- : Started GET "/assets/chart-fa39cfcb694e0b5df14561a6df5e8868fdb059753a59347f8e5a8f4e7a2d1984.png" for 127.0.0.1 at 2017-03-27 08:11:40 -0300
+W, [2017-03-27T08:12:37.812092 #5679]  WARN -- : Creating scope :order. Overwriting existing method Pair.order.
+I, [2017-03-27T08:12:39.882219 #5679]  INFO -- : Started GET "/" for 127.0.0.1 at 2017-03-27 08:12:39 -0300
+I, [2017-03-27T08:12:39.885098 #5679]  INFO -- : Processing by StaticPagesController#index as HTML
+I, [2017-03-27T08:12:39.893625 #5679]  INFO -- :   Rendering static_pages/index.html.haml within layouts/application
+I, [2017-03-27T08:12:40.050316 #5679]  INFO -- :   Rendered static_pages/index.html.haml within layouts/application (156.6ms)
+D, [2017-03-27T08:12:40.058923 #5679] DEBUG -- : MONGODB | Topology type 'unknown' initializing.
+D, [2017-03-27T08:12:40.059046 #5679] DEBUG -- : MONGODB | Server ds119618.mlab.com:19618 initializing.
+D, [2017-03-27T08:12:40.827367 #5679] DEBUG -- : MONGODB | Server description for ds119618.mlab.com:19618 changed from 'unknown' to 'primary'.
+D, [2017-03-27T08:12:40.827665 #5679] DEBUG -- : MONGODB | Server ds119618-a.mlab.com:19618 initializing.
+D, [2017-03-27T08:12:41.368797 #5679] DEBUG -- : MONGODB | Server description for ds119618-a.mlab.com:19618 changed from 'unknown' to 'primary'.
+D, [2017-03-27T08:12:41.368988 #5679] DEBUG -- : MONGODB | Topology type 'unknown' changed to type 'replica set'.
+D, [2017-03-27T08:12:41.369309 #5679] DEBUG -- : MONGODB | There was a change in the members of the 'replica set' topology.
+D, [2017-03-27T08:12:41.370112 #5679] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('58c736e3459ba90c2a6e1247')}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:12:41.639860 #5679] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.saslStart | STARTED | {}
+D, [2017-03-27T08:12:41.776478 #5679] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.saslStart | SUCCEEDED | 0.13639415700000002s
+D, [2017-03-27T08:12:41.791723 #5679] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.saslContinue | STARTED | {}
+D, [2017-03-27T08:12:41.926484 #5679] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.saslContinue | SUCCEEDED | 0.134652503s
+D, [2017-03-27T08:12:41.926659 #5679] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.saslContinue | STARTED | {}
+D, [2017-03-27T08:12:42.062046 #5679] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.saslContinue | SUCCEEDED | 0.135299842s
+D, [2017-03-27T08:12:42.197009 #5679] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.8267988669999999s
+I, [2017-03-27T08:12:42.197548 #5679]  INFO -- : Completed 200 OK in 2312ms (Views: 2305.9ms)
+I, [2017-03-27T08:12:44.324744 #5679]  INFO -- : Started GET "/pairs" for 127.0.0.1 at 2017-03-27 08:12:44 -0300
+D, [2017-03-27T08:12:44.327205 #5679] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('58c736e3459ba90c2a6e1247')}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:12:44.462394 #5679] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.13500986199999998s
+I, [2017-03-27T08:12:44.463321 #5679]  INFO -- : Processing by PairsController#index as HTML
+D, [2017-03-27T08:12:44.464879 #5679] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Pairs", "filter"=>{}, "sort"=>{"_id"=>-1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:12:44.599975 #5679] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.135000236s
+D, [2017-03-27T08:12:44.735902 #5679] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.count | STARTED | {"count"=>"Pairs", "query"=>{}}
+D, [2017-03-27T08:12:44.870959 #5679] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.count | SUCCEEDED | 0.134919188s
+D, [2017-03-27T08:12:45.006203 #5679] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.count | STARTED | {"count"=>"Pairs", "query"=>{}}
+D, [2017-03-27T08:12:45.141417 #5679] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.count | SUCCEEDED | 0.135017035s
+D, [2017-03-27T08:12:45.277480 #5679] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.count | STARTED | {"count"=>"Pairs", "query"=>{}}
+D, [2017-03-27T08:12:45.412297 #5679] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.count | SUCCEEDED | 0.134692674s
+D, [2017-03-27T08:12:45.547744 #5679] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.count | STARTED | {"count"=>"Pairs", "query"=>{}}
+D, [2017-03-27T08:12:45.682716 #5679] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.count | SUCCEEDED | 0.134847523s
+D, [2017-03-27T08:12:45.817783 #5679] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.count | STARTED | {"count"=>"Pairs", "query"=>{}}
+D, [2017-03-27T08:12:45.952436 #5679] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.count | SUCCEEDED | 0.13452667299999999s
+D, [2017-03-27T08:12:46.088184 #5679] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.count | STARTED | {"count"=>"Pairs", "query"=>{}}
+D, [2017-03-27T08:12:46.223239 #5679] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.count | SUCCEEDED | 0.134904892s
+D, [2017-03-27T08:12:46.358542 #5679] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.count | STARTED | {"count"=>"Pairs", "query"=>{}}
+D, [2017-03-27T08:12:46.493671 #5679] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.count | SUCCEEDED | 0.13498556599999997s
+D, [2017-03-27T08:12:46.628946 #5679] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.count | STARTED | {"count"=>"Pairs", "query"=>{}}
+D, [2017-03-27T08:12:46.763807 #5679] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.count | SUCCEEDED | 0.134686833s
+I, [2017-03-27T08:12:46.766530 #5679]  INFO -- :   Rendering pairs/index.html.haml within layouts/application
+D, [2017-03-27T08:12:46.904996 #5679] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.count | STARTED | {"count"=>"Pairs", "query"=>{}}
+D, [2017-03-27T08:12:47.040032 #5679] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.count | SUCCEEDED | 0.134890111s
+I, [2017-03-27T08:12:47.041571 #5679]  INFO -- :   Rendered pairs/_filter_form.html.haml (273.8ms)
+D, [2017-03-27T08:12:47.179487 #5679] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.count | STARTED | {"count"=>"Pairs", "query"=>{"data_inicial"=>"20170324"}}
+D, [2017-03-27T08:12:47.314773 #5679] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.count | SUCCEEDED | 0.135152179s
+D, [2017-03-27T08:12:47.341886 #5679] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Pairs", "filter"=>{"data_inicial"=>"20170324"}, "limit"=>25, "skip"=>0, "sort"=>{"ativo_indep"=>1, "ativo_dep"=>1, "ADF_result"=>1}}
+D, [2017-03-27T08:12:47.481125 #5679] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.139116023s
+D, [2017-03-27T08:12:47.481973 #5679] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"BBAS3", "data_inicial"=>"20170324", "periodo"=>160}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:12:47.617079 #5679] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.13501334s
+D, [2017-03-27T08:12:47.618436 #5679] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"BBAS3", "data_inicial"=>"20170324", "periodo"=>160}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:12:47.753760 #5679] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.135229233s
+D, [2017-03-27T08:12:47.754801 #5679] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"BBAS3", "data_inicial"=>"20170324", "periodo"=>200}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:12:47.890072 #5679] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.135152464s
+D, [2017-03-27T08:12:47.891105 #5679] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"BBAS3", "data_inicial"=>"20170324", "periodo"=>200}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:12:48.026572 #5679] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.135318295s
+D, [2017-03-27T08:12:48.027870 #5679] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"BBAS3", "data_inicial"=>"20170324", "periodo"=>120}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:12:48.163217 #5679] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.135215087s
+D, [2017-03-27T08:12:48.164251 #5679] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"BBAS3", "data_inicial"=>"20170324", "periodo"=>120}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:12:48.299425 #5679] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.135078811s
+D, [2017-03-27T08:12:48.300356 #5679] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"BBAS3", "data_inicial"=>"20170324", "periodo"=>180}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:12:48.435448 #5679] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.134999813s
+D, [2017-03-27T08:12:48.436358 #5679] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"BBAS3", "data_inicial"=>"20170324", "periodo"=>180}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:12:48.571832 #5679] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.13536842699999999s
+D, [2017-03-27T08:12:48.572852 #5679] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"BBAS3", "data_inicial"=>"20170324", "periodo"=>220}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:12:48.708096 #5679] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.135132856s
+D, [2017-03-27T08:12:48.709104 #5679] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"BBAS3", "data_inicial"=>"20170324", "periodo"=>220}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:12:48.844179 #5679] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.134967769s
+D, [2017-03-27T08:12:48.845159 #5679] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"BBSE3", "data_inicial"=>"20170324", "periodo"=>120}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:12:48.980533 #5679] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.135278696s
+D, [2017-03-27T08:12:48.981474 #5679] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"BBSE3", "data_inicial"=>"20170324", "periodo"=>120}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:12:49.116868 #5679] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.13527926s
+D, [2017-03-27T08:12:49.117747 #5679] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"BBSE3", "data_inicial"=>"20170324", "periodo"=>160}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:12:49.253243 #5679] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.135406319s
+D, [2017-03-27T08:12:49.254190 #5679] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"BBSE3", "data_inicial"=>"20170324", "periodo"=>160}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:12:49.389852 #5679] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.135539599s
+D, [2017-03-27T08:12:49.390887 #5679] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"BBSE3", "data_inicial"=>"20170324", "periodo"=>140}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:12:49.526157 #5679] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.135160842s
+D, [2017-03-27T08:12:49.527198 #5679] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"BBSE3", "data_inicial"=>"20170324", "periodo"=>140}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:12:49.662496 #5679] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.13519092800000002s
+D, [2017-03-27T08:12:49.663454 #5679] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"BBSE3", "data_inicial"=>"20170324", "periodo"=>200}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:12:49.798693 #5679] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.135144655s
+D, [2017-03-27T08:12:49.799639 #5679] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"BBSE3", "data_inicial"=>"20170324", "periodo"=>200}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:12:49.934735 #5679] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.135002418s
+D, [2017-03-27T08:12:49.935616 #5679] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"BBSE3", "data_inicial"=>"20170324", "periodo"=>220}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:12:50.072582 #5679] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.13686965s
+D, [2017-03-27T08:12:50.073642 #5679] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"BBSE3", "data_inicial"=>"20170324", "periodo"=>220}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:12:50.208900 #5679] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.135146874s
+D, [2017-03-27T08:12:50.209874 #5679] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"BBSE3", "data_inicial"=>"20170324", "periodo"=>180}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:12:50.345073 #5679] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.135095314s
+D, [2017-03-27T08:12:50.346073 #5679] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"BBSE3", "data_inicial"=>"20170324", "periodo"=>180}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:12:50.481459 #5679] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.135291779s
+D, [2017-03-27T08:12:50.482358 #5679] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"CIEL3", "data_inicial"=>"20170324", "periodo"=>160}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:12:50.617795 #5679] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.135341843s
+D, [2017-03-27T08:12:50.618721 #5679] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"CIEL3", "data_inicial"=>"20170324", "periodo"=>160}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:12:50.754266 #5679] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.135465018s
+D, [2017-03-27T08:12:50.755203 #5679] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"CIEL3", "data_inicial"=>"20170324", "periodo"=>200}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:12:50.890773 #5679] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.135469012s
+D, [2017-03-27T08:12:50.891835 #5679] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"CIEL3", "data_inicial"=>"20170324", "periodo"=>200}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:12:51.027373 #5679] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.135424577s
+D, [2017-03-27T08:12:51.028250 #5679] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"CIEL3", "data_inicial"=>"20170324", "periodo"=>180}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:12:51.163852 #5679] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.135513369s
+D, [2017-03-27T08:12:51.164794 #5679] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"CIEL3", "data_inicial"=>"20170324", "periodo"=>180}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:12:51.300240 #5679] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.135347932s
+D, [2017-03-27T08:12:51.301124 #5679] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"CMIG4", "data_inicial"=>"20170324", "periodo"=>100}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:12:51.436831 #5679] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.135619246s
+D, [2017-03-27T08:12:51.437763 #5679] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"CMIG4", "data_inicial"=>"20170324", "periodo"=>100}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:12:51.504284 #5679] DEBUG -- : MONGODB | Server description for ds119618-a.mlab.com:19618 changed from 'unknown' to 'primary'.
+D, [2017-03-27T08:12:51.504475 #5679] DEBUG -- : MONGODB | Server ds119618.mlab.com:19618 connection closed.
+D, [2017-03-27T08:12:51.573346 #5679] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.135467483s
+D, [2017-03-27T08:12:51.574421 #5679] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"CMIG4", "data_inicial"=>"20170324", "periodo"=>140}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:12:51.890173 #5679] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.saslStart | STARTED | {}
+D, [2017-03-27T08:12:52.049235 #5679] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.saslStart | SUCCEEDED | 0.158946004s
+D, [2017-03-27T08:12:52.055005 #5679] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.saslContinue | STARTED | {}
+D, [2017-03-27T08:12:52.212950 #5679] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.saslContinue | SUCCEEDED | 0.15781445s
+D, [2017-03-27T08:12:52.213216 #5679] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.saslContinue | STARTED | {}
+D, [2017-03-27T08:12:52.371141 #5679] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.saslContinue | SUCCEEDED | 0.157813492s
+D, [2017-03-27T08:12:52.529923 #5679] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.955399456s
+D, [2017-03-27T08:12:52.530853 #5679] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"CMIG4", "data_inicial"=>"20170324", "periodo"=>140}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:12:52.689642 #5679] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.158692523s
+D, [2017-03-27T08:12:52.690527 #5679] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"CMIG4", "data_inicial"=>"20170324", "periodo"=>160}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:12:52.849171 #5679] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.158545593s
+D, [2017-03-27T08:12:52.850086 #5679] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"CMIG4", "data_inicial"=>"20170324", "periodo"=>160}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:12:53.008717 #5679] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.158545015s
+D, [2017-03-27T08:12:53.009571 #5679] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"ECOR3", "data_inicial"=>"20170324", "periodo"=>120}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:12:53.168443 #5679] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.15877988799999998s
+D, [2017-03-27T08:12:53.169361 #5679] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"ECOR3", "data_inicial"=>"20170324", "periodo"=>120}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:12:53.327988 #5679] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.15853597s
+D, [2017-03-27T08:12:53.328904 #5679] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"ECOR3", "data_inicial"=>"20170324", "periodo"=>160}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:12:53.487297 #5679] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.15827761s
+D, [2017-03-27T08:12:53.488203 #5679] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"ECOR3", "data_inicial"=>"20170324", "periodo"=>160}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:12:53.647126 #5679] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.15883295600000003s
+D, [2017-03-27T08:12:53.648018 #5679] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"ECOR3", "data_inicial"=>"20170324", "periodo"=>180}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:12:53.806583 #5679] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.15844565900000002s
+D, [2017-03-27T08:12:53.807949 #5679] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"ECOR3", "data_inicial"=>"20170324", "periodo"=>180}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:12:53.966494 #5679] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.158399039s
+D, [2017-03-27T08:12:53.967470 #5679] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"ECOR3", "data_inicial"=>"20170324", "periodo"=>250}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:12:54.126053 #5679] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.158475222s
+D, [2017-03-27T08:12:54.127001 #5679] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"ECOR3", "data_inicial"=>"20170324", "periodo"=>250}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:12:54.482721 #5679] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.35561885000000004s
+D, [2017-03-27T08:12:54.483601 #5679] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"ECOR3", "data_inicial"=>"20170324", "periodo"=>200}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:12:54.642206 #5679] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.158516736s
+D, [2017-03-27T08:12:54.643122 #5679] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"ECOR3", "data_inicial"=>"20170324", "periodo"=>200}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:12:54.801640 #5679] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.158426506s
+D, [2017-03-27T08:12:54.802505 #5679] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"KROT3", "data_inicial"=>"20170324", "periodo"=>200}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:12:54.961204 #5679] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.15861103099999999s
+D, [2017-03-27T08:12:54.962122 #5679] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"KROT3", "data_inicial"=>"20170324", "periodo"=>200}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:12:55.120874 #5679] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.158637331s
+D, [2017-03-27T08:12:55.121783 #5679] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"KROT3", "data_inicial"=>"20170324", "periodo"=>180}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:12:55.280304 #5679] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.15841059700000001s
+D, [2017-03-27T08:12:55.281210 #5679] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"KROT3", "data_inicial"=>"20170324", "periodo"=>180}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:12:55.439644 #5679] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.158343778s
+D, [2017-03-27T08:12:55.440532 #5679] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"KROT3", "data_inicial"=>"20170324", "periodo"=>140}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:12:55.599065 #5679] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.158446228s
+D, [2017-03-27T08:12:55.599962 #5679] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"KROT3", "data_inicial"=>"20170324", "periodo"=>140}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:12:55.758648 #5679] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.15854222s
+I, [2017-03-27T08:12:55.770592 #5679]  INFO -- :   Rendered pairs/_table.html.haml (8728.5ms)
+I, [2017-03-27T08:12:55.770687 #5679]  INFO -- :   Rendered pairs/index.html.haml within layouts/application (9004.1ms)
+I, [2017-03-27T08:12:55.778650 #5679]  INFO -- : Completed 200 OK in 11315ms (Views: 9013.8ms)
+I, [2017-03-27T08:12:57.452677 #5679]  INFO -- : Started GET "/assets/chart-fa39cfcb694e0b5df14561a6df5e8868fdb059753a59347f8e5a8f4e7a2d1984.png" for 127.0.0.1 at 2017-03-27 08:12:57 -0300
+I, [2017-03-27T08:12:57.456190 #5679]  INFO -- : Started GET "/assets/logo%20quantco-af7d86f5ceb5af4e2f9832144b8e044e7889392057859f850f13742fc0ec698a.png" for 127.0.0.1 at 2017-03-27 08:12:57 -0300
+W, [2017-03-27T08:13:06.239949 #5878]  WARN -- : Creating scope :order. Overwriting existing method Pair.order.
+I, [2017-03-27T08:13:07.709027 #5878]  INFO -- : Started GET "/" for 127.0.0.1 at 2017-03-27 08:13:07 -0300
+I, [2017-03-27T08:13:07.711971 #5878]  INFO -- : Processing by StaticPagesController#index as HTML
+I, [2017-03-27T08:13:07.720567 #5878]  INFO -- :   Rendering static_pages/index.html.haml within layouts/application
+I, [2017-03-27T08:13:07.871093 #5878]  INFO -- :   Rendered static_pages/index.html.haml within layouts/application (150.4ms)
+D, [2017-03-27T08:13:07.881416 #5878] DEBUG -- : MONGODB | Topology type 'unknown' initializing.
+D, [2017-03-27T08:13:07.881567 #5878] DEBUG -- : MONGODB | Server ds119618.mlab.com:19618 initializing.
+D, [2017-03-27T08:13:09.100673 #5878] DEBUG -- : MONGODB | Server description for ds119618.mlab.com:19618 changed from 'unknown' to 'primary'.
+D, [2017-03-27T08:13:09.100786 #5878] DEBUG -- : MONGODB | Server ds119618-a.mlab.com:19618 initializing.
+D, [2017-03-27T08:13:09.735525 #5878] DEBUG -- : MONGODB | Server description for ds119618-a.mlab.com:19618 changed from 'unknown' to 'primary'.
+D, [2017-03-27T08:13:09.735668 #5878] DEBUG -- : MONGODB | Topology type 'unknown' changed to type 'replica set'.
+D, [2017-03-27T08:13:09.735825 #5878] DEBUG -- : MONGODB | There was a change in the members of the 'replica set' topology.
+D, [2017-03-27T08:13:09.736395 #5878] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('58c736e3459ba90c2a6e1247')}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:13:10.100786 #5878] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.saslStart | STARTED | {}
+D, [2017-03-27T08:13:10.285268 #5878] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.saslStart | SUCCEEDED | 0.184343739s
+D, [2017-03-27T08:13:10.290661 #5878] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.saslContinue | STARTED | {}
+D, [2017-03-27T08:13:10.472823 #5878] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.saslContinue | SUCCEEDED | 0.182076116s
+D, [2017-03-27T08:13:10.473000 #5878] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.saslContinue | STARTED | {}
+D, [2017-03-27T08:13:10.655988 #5878] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.saslContinue | SUCCEEDED | 0.18288754699999998s
+D, [2017-03-27T08:13:10.838209 #5878] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | SUCCEEDED | 1.101731084s
+I, [2017-03-27T08:13:10.838732 #5878]  INFO -- : Completed 200 OK in 3127ms (Views: 3120.2ms)
+I, [2017-03-27T08:13:10.843422 #5878]  INFO -- : Started GET "/assets/application-299f58e21c200a07b8c05ef26f357ace3286e15f9e6157a669e1d345a11631b0.css" for 127.0.0.1 at 2017-03-27 08:13:10 -0300
+I, [2017-03-27T08:13:10.851280 #5878]  INFO -- : Started GET "/assets/application-f52c67786de1509b25b6192a5eb5725a23be95a9577830da87b555ac97470c31.js" for 127.0.0.1 at 2017-03-27 08:13:10 -0300
+I, [2017-03-27T08:13:10.951410 #5878]  INFO -- : Started GET "/assets/header-012975bc0328ef43ba0535ef270cde7d9daa108dd20a707e487d278959bcb5f9.jpg" for 127.0.0.1 at 2017-03-27 08:13:10 -0300
+I, [2017-03-27T08:13:14.902976 #5878]  INFO -- : Started GET "/pairs" for 127.0.0.1 at 2017-03-27 08:13:14 -0300
+D, [2017-03-27T08:13:14.904318 #5878] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('58c736e3459ba90c2a6e1247')}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:13:15.086619 #5878] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.182175736s
+I, [2017-03-27T08:13:15.087562 #5878]  INFO -- : Processing by PairsController#index as HTML
+D, [2017-03-27T08:13:15.089496 #5878] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Pairs", "filter"=>{}, "sort"=>{"_id"=>-1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:13:15.272029 #5878] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.182414518s
+D, [2017-03-27T08:13:15.455140 #5878] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.count | STARTED | {"count"=>"Pairs", "query"=>{}}
+D, [2017-03-27T08:13:15.637213 #5878] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.count | SUCCEEDED | 0.181932867s
+D, [2017-03-27T08:13:15.819981 #5878] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.count | STARTED | {"count"=>"Pairs", "query"=>{}}
+D, [2017-03-27T08:13:16.001978 #5878] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.count | SUCCEEDED | 0.181863256s
+D, [2017-03-27T08:13:16.184659 #5878] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.count | STARTED | {"count"=>"Pairs", "query"=>{}}
+D, [2017-03-27T08:13:16.366777 #5878] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.count | SUCCEEDED | 0.18199730600000003s
+D, [2017-03-27T08:13:16.549110 #5878] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.count | STARTED | {"count"=>"Pairs", "query"=>{}}
+D, [2017-03-27T08:13:16.731260 #5878] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.count | SUCCEEDED | 0.18199429s
+D, [2017-03-27T08:13:16.913739 #5878] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.count | STARTED | {"count"=>"Pairs", "query"=>{}}
+D, [2017-03-27T08:13:17.095928 #5878] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.count | SUCCEEDED | 0.18205754s
+D, [2017-03-27T08:13:17.278939 #5878] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.count | STARTED | {"count"=>"Pairs", "query"=>{}}
+D, [2017-03-27T08:13:17.461307 #5878] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.count | SUCCEEDED | 0.182167154s
+D, [2017-03-27T08:13:17.643909 #5878] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.count | STARTED | {"count"=>"Pairs", "query"=>{}}
+D, [2017-03-27T08:13:17.826239 #5878] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.count | SUCCEEDED | 0.182191571s
+D, [2017-03-27T08:13:18.008855 #5878] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.count | STARTED | {"count"=>"Pairs", "query"=>{}}
+D, [2017-03-27T08:13:18.191229 #5878] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.count | SUCCEEDED | 0.182233868s
+I, [2017-03-27T08:13:18.194121 #5878]  INFO -- :   Rendering pairs/index.html.haml within layouts/application
+D, [2017-03-27T08:13:18.379914 #5878] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.count | STARTED | {"count"=>"Pairs", "query"=>{}}
+D, [2017-03-27T08:13:18.562393 #5878] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.count | SUCCEEDED | 0.18226963300000001s
+I, [2017-03-27T08:13:18.565335 #5878]  INFO -- :   Rendered pairs/_filter_form.html.haml (369.8ms)
+D, [2017-03-27T08:13:18.752186 #5878] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.count | STARTED | {"count"=>"Pairs", "query"=>{"data_inicial"=>"20170324"}}
+D, [2017-03-27T08:13:18.934792 #5878] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.count | SUCCEEDED | 0.18247985s
+D, [2017-03-27T08:13:18.965702 #5878] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Pairs", "filter"=>{"data_inicial"=>"20170324"}, "limit"=>25, "skip"=>0, "sort"=>{"ativo_indep"=>1, "ativo_dep"=>1, "ADF_result"=>1}}
+D, [2017-03-27T08:13:19.151907 #5878] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.18609246100000001s
+D, [2017-03-27T08:13:19.152767 #5878] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"BBAS3", "data_inicial"=>"20170324", "periodo"=>160}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:13:19.335358 #5878] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.182478073s
+D, [2017-03-27T08:13:19.336709 #5878] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"BBAS3", "data_inicial"=>"20170324", "periodo"=>160}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:13:19.519170 #5878] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.182372712s
+D, [2017-03-27T08:13:19.520100 #5878] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"BBAS3", "data_inicial"=>"20170324", "periodo"=>200}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:13:19.702778 #5878] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.182567588s
+D, [2017-03-27T08:13:19.704132 #5878] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"BBAS3", "data_inicial"=>"20170324", "periodo"=>200}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:13:19.886788 #5878] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.182543211s
+D, [2017-03-27T08:13:19.887806 #5878] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"BBAS3", "data_inicial"=>"20170324", "periodo"=>120}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:13:19.895456 #5878] DEBUG -- : MONGODB | Server description for ds119618-a.mlab.com:19618 changed from 'unknown' to 'primary'.
+D, [2017-03-27T08:13:19.895685 #5878] DEBUG -- : MONGODB | Server ds119618.mlab.com:19618 connection closed.
+D, [2017-03-27T08:13:20.070187 #5878] DEBUG -- : MONGODB | ds119618.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.182283745s
+D, [2017-03-27T08:13:20.071125 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"BBAS3", "data_inicial"=>"20170324", "periodo"=>120}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:13:20.388376 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.saslStart | STARTED | {}
+D, [2017-03-27T08:13:20.548455 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.saslStart | SUCCEEDED | 0.15996454400000001s
+D, [2017-03-27T08:13:20.553853 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.saslContinue | STARTED | {}
+D, [2017-03-27T08:13:20.712652 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.saslContinue | SUCCEEDED | 0.158698125s
+D, [2017-03-27T08:13:20.712839 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.saslContinue | STARTED | {}
+D, [2017-03-27T08:13:20.871731 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.saslContinue | SUCCEEDED | 0.158747999s
+D, [2017-03-27T08:13:21.039402 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.968139674s
+D, [2017-03-27T08:13:21.040626 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"BBAS3", "data_inicial"=>"20170324", "periodo"=>180}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:13:21.200022 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.1592758s
+D, [2017-03-27T08:13:21.200918 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"BBAS3", "data_inicial"=>"20170324", "periodo"=>180}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:13:21.359925 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.158909669s
+D, [2017-03-27T08:13:21.360915 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"BBAS3", "data_inicial"=>"20170324", "periodo"=>220}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:13:21.520113 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.15909728599999998s
+D, [2017-03-27T08:13:21.521022 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"BBAS3", "data_inicial"=>"20170324", "periodo"=>220}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:13:21.680080 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.158939181s
+D, [2017-03-27T08:13:21.680935 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"BBSE3", "data_inicial"=>"20170324", "periodo"=>120}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:13:21.840772 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.15973401399999998s
+D, [2017-03-27T08:13:21.841901 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"BBSE3", "data_inicial"=>"20170324", "periodo"=>120}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:13:22.001353 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.159352599s
+D, [2017-03-27T08:13:22.002252 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"BBSE3", "data_inicial"=>"20170324", "periodo"=>160}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:13:22.161572 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.159233383s
+D, [2017-03-27T08:13:22.162470 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"BBSE3", "data_inicial"=>"20170324", "periodo"=>160}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:13:22.321808 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.159251772s
+D, [2017-03-27T08:13:22.322656 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"BBSE3", "data_inicial"=>"20170324", "periodo"=>140}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:13:22.482021 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.159277511s
+D, [2017-03-27T08:13:22.482891 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"BBSE3", "data_inicial"=>"20170324", "periodo"=>140}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:13:22.642436 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.15945604800000002s
+D, [2017-03-27T08:13:22.643330 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"BBSE3", "data_inicial"=>"20170324", "periodo"=>200}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:13:22.802443 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.15902678099999998s
+D, [2017-03-27T08:13:22.803326 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"BBSE3", "data_inicial"=>"20170324", "periodo"=>200}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:13:22.962595 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.159178524s
+D, [2017-03-27T08:13:22.963477 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"BBSE3", "data_inicial"=>"20170324", "periodo"=>220}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:13:23.691115 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.727501721s
+D, [2017-03-27T08:13:23.692243 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"BBSE3", "data_inicial"=>"20170324", "periodo"=>220}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:13:23.851588 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.15924903s
+D, [2017-03-27T08:13:23.852454 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"BBSE3", "data_inicial"=>"20170324", "periodo"=>180}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:13:24.011808 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.15926224600000002s
+D, [2017-03-27T08:13:24.012701 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"BBSE3", "data_inicial"=>"20170324", "periodo"=>180}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:13:24.172030 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.15924270799999998s
+D, [2017-03-27T08:13:24.172866 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"CIEL3", "data_inicial"=>"20170324", "periodo"=>160}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:13:24.338152 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.16520056500000002s
+D, [2017-03-27T08:13:24.339081 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"CIEL3", "data_inicial"=>"20170324", "periodo"=>160}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:13:24.498521 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.159348759s
+D, [2017-03-27T08:13:24.499412 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"CIEL3", "data_inicial"=>"20170324", "periodo"=>200}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:13:24.658860 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.159361047s
+D, [2017-03-27T08:13:24.659733 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"CIEL3", "data_inicial"=>"20170324", "periodo"=>200}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:13:24.819333 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.159488924s
+D, [2017-03-27T08:13:24.820228 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"CIEL3", "data_inicial"=>"20170324", "periodo"=>180}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:13:24.979708 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.159393706s
+D, [2017-03-27T08:13:24.980581 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"CIEL3", "data_inicial"=>"20170324", "periodo"=>180}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:13:25.140352 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.159684972s
+D, [2017-03-27T08:13:25.141206 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"CMIG4", "data_inicial"=>"20170324", "periodo"=>100}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:13:25.300696 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.15937646s
+D, [2017-03-27T08:13:25.302063 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"CMIG4", "data_inicial"=>"20170324", "periodo"=>100}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:13:25.461562 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.159384863s
+D, [2017-03-27T08:13:25.462437 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"CMIG4", "data_inicial"=>"20170324", "periodo"=>140}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:13:25.621762 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.159240924s
+D, [2017-03-27T08:13:25.622637 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"CMIG4", "data_inicial"=>"20170324", "periodo"=>140}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:13:25.781941 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.15921066s
+D, [2017-03-27T08:13:25.782795 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"CMIG4", "data_inicial"=>"20170324", "periodo"=>160}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:13:25.942140 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.159260467s
+D, [2017-03-27T08:13:25.943007 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"CMIG4", "data_inicial"=>"20170324", "periodo"=>160}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:13:26.102672 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.15958090600000002s
+D, [2017-03-27T08:13:26.103567 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"ECOR3", "data_inicial"=>"20170324", "periodo"=>120}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:13:26.263333 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.159650704s
+D, [2017-03-27T08:13:26.264470 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"ECOR3", "data_inicial"=>"20170324", "periodo"=>120}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:13:26.423984 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.159387159s
+D, [2017-03-27T08:13:26.424846 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"ECOR3", "data_inicial"=>"20170324", "periodo"=>160}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:13:26.584464 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.15952982599999999s
+D, [2017-03-27T08:13:26.585341 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"ECOR3", "data_inicial"=>"20170324", "periodo"=>160}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:13:26.744962 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.15949929000000002s
+D, [2017-03-27T08:13:26.746440 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"ECOR3", "data_inicial"=>"20170324", "periodo"=>180}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:13:27.103135 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.356553379s
+D, [2017-03-27T08:13:27.105656 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"ECOR3", "data_inicial"=>"20170324", "periodo"=>180}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:13:27.266401 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.160483737s
+D, [2017-03-27T08:13:27.268984 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"ECOR3", "data_inicial"=>"20170324", "periodo"=>250}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:13:27.429515 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.160300361s
+D, [2017-03-27T08:13:27.431601 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"ECOR3", "data_inicial"=>"20170324", "periodo"=>250}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:13:27.591568 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.159801794s
+D, [2017-03-27T08:13:27.592861 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"ECOR3", "data_inicial"=>"20170324", "periodo"=>200}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:13:27.753046 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.159998267s
+D, [2017-03-27T08:13:27.755194 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"ECOR3", "data_inicial"=>"20170324", "periodo"=>200}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:13:27.915457 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.160000274s
+D, [2017-03-27T08:13:27.917761 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"KROT3", "data_inicial"=>"20170324", "periodo"=>200}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:13:28.080345 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.162374503s
+D, [2017-03-27T08:13:28.082070 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"KROT3", "data_inicial"=>"20170324", "periodo"=>200}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:13:28.241880 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.159671327s
+D, [2017-03-27T08:13:28.242781 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"KROT3", "data_inicial"=>"20170324", "periodo"=>180}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:13:28.402317 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.159449023s
+D, [2017-03-27T08:13:28.403194 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"KROT3", "data_inicial"=>"20170324", "periodo"=>180}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:13:28.562681 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.159399472s
+D, [2017-03-27T08:13:28.563556 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"KROT3", "data_inicial"=>"20170324", "periodo"=>140}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:13:28.723095 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.159443932s
+D, [2017-03-27T08:13:28.724068 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"KROT3", "data_inicial"=>"20170324", "periodo"=>140}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:13:28.883703 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.159533158s
+I, [2017-03-27T08:13:28.895308 #5878]  INFO -- :   Rendered pairs/_table.html.haml (10329.0ms)
+I, [2017-03-27T08:13:28.895409 #5878]  INFO -- :   Rendered pairs/index.html.haml within layouts/application (10701.2ms)
+I, [2017-03-27T08:13:28.902625 #5878]  INFO -- : Completed 200 OK in 13815ms (Views: 10710.3ms)
+I, [2017-03-27T08:13:42.264101 #5878]  INFO -- : Started POST "/pairs/search" for 127.0.0.1 at 2017-03-27 08:13:42 -0300
+D, [2017-03-27T08:13:42.265992 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('58c736e3459ba90c2a6e1247')}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:13:42.425141 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.158991327s
+I, [2017-03-27T08:13:42.434005 #5878]  INFO -- : Processing by PairsController#search as HTML
+I, [2017-03-27T08:13:42.434088 #5878]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"eqZpJR6XnkZWHSVB8g14cnUgcsazGqAiW2MPVtsq9d3Hd1MNWDlq9zOqayo/kFc3TyKNTSbbB1d0+IX7GPPM2Q==", "q"=>{"data_inicial_eq"=>"20170324", "nivel_confianca_gteq"=>"95", "sinal_entrada_eq"=>"4"}, "commit"=>"Procurar Pares"}
+D, [2017-03-27T08:13:42.434894 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Pairs", "filter"=>{}, "sort"=>{"_id"=>-1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:13:42.594155 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.15915264799999998s
+D, [2017-03-27T08:13:42.754119 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.count | STARTED | {"count"=>"Pairs", "query"=>{}}
+D, [2017-03-27T08:13:42.912751 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.count | SUCCEEDED | 0.158498449s
+D, [2017-03-27T08:13:43.072486 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.count | STARTED | {"count"=>"Pairs", "query"=>{}}
+D, [2017-03-27T08:13:43.231729 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.count | SUCCEEDED | 0.158982186s
+D, [2017-03-27T08:13:43.392334 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.count | STARTED | {"count"=>"Pairs", "query"=>{}}
+D, [2017-03-27T08:13:43.551331 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.count | SUCCEEDED | 0.15879526200000002s
+D, [2017-03-27T08:13:43.710536 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.count | STARTED | {"count"=>"Pairs", "query"=>{}}
+D, [2017-03-27T08:13:43.869278 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.count | SUCCEEDED | 0.158613847s
+D, [2017-03-27T08:13:44.028459 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.count | STARTED | {"count"=>"Pairs", "query"=>{}}
+D, [2017-03-27T08:13:44.187377 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.count | SUCCEEDED | 0.15877951399999998s
+D, [2017-03-27T08:13:44.346495 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.count | STARTED | {"count"=>"Pairs", "query"=>{}}
+D, [2017-03-27T08:13:44.505014 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.count | SUCCEEDED | 0.15839185500000003s
+D, [2017-03-27T08:13:44.664380 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.count | STARTED | {"count"=>"Pairs", "query"=>{}}
+D, [2017-03-27T08:13:44.823556 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.count | SUCCEEDED | 0.159040656s
+D, [2017-03-27T08:13:44.982848 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.count | STARTED | {"count"=>"Pairs", "query"=>{}}
+D, [2017-03-27T08:13:45.141830 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.count | SUCCEEDED | 0.15881964s
+D, [2017-03-27T08:13:45.301236 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.count | STARTED | {"count"=>"Pairs", "query"=>{}}
+D, [2017-03-27T08:13:45.460110 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.count | SUCCEEDED | 0.158730253s
+D, [2017-03-27T08:13:45.619199 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.count | STARTED | {"count"=>"Pairs", "query"=>{}}
+D, [2017-03-27T08:13:45.777865 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.count | SUCCEEDED | 0.158506524s
+D, [2017-03-27T08:13:45.936667 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.count | STARTED | {"count"=>"Pairs", "query"=>{}}
+D, [2017-03-27T08:13:46.095388 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.count | SUCCEEDED | 0.15860075899999998s
+D, [2017-03-27T08:13:46.254629 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.count | STARTED | {"count"=>"Pairs", "query"=>{}}
+D, [2017-03-27T08:13:46.413912 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.count | SUCCEEDED | 0.15901565399999998s
+D, [2017-03-27T08:13:46.573892 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.count | STARTED | {"count"=>"Pairs", "query"=>{}}
+D, [2017-03-27T08:13:46.732628 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.count | SUCCEEDED | 0.158606921s
+D, [2017-03-27T08:13:46.891857 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.count | STARTED | {"count"=>"Pairs", "query"=>{}}
+D, [2017-03-27T08:13:47.051392 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.count | SUCCEEDED | 0.15935554400000002s
+D, [2017-03-27T08:13:47.210546 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.count | STARTED | {"count"=>"Pairs", "query"=>{}}
+D, [2017-03-27T08:13:47.369318 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.count | SUCCEEDED | 0.158609666s
+D, [2017-03-27T08:13:47.528675 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.count | STARTED | {"count"=>"Pairs", "query"=>{}}
+D, [2017-03-27T08:13:47.687521 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.count | SUCCEEDED | 0.15867415099999999s
+D, [2017-03-27T08:13:47.846763 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.count | STARTED | {"count"=>"Pairs", "query"=>{}}
+D, [2017-03-27T08:13:48.005731 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.count | SUCCEEDED | 0.158809858s
+D, [2017-03-27T08:13:48.165210 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.count | STARTED | {"count"=>"Pairs", "query"=>{}}
+D, [2017-03-27T08:13:48.324099 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.count | SUCCEEDED | 0.158718416s
+I, [2017-03-27T08:13:48.326616 #5878]  INFO -- :   Rendering pairs/index.html.haml within layouts/application
+D, [2017-03-27T08:13:48.486950 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.count | STARTED | {"count"=>"Pairs", "query"=>{}}
+D, [2017-03-27T08:13:48.645876 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.count | SUCCEEDED | 0.158762995s
+D, [2017-03-27T08:13:48.804992 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.count | STARTED | {"count"=>"Pairs", "query"=>{}}
+D, [2017-03-27T08:13:48.963927 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.count | SUCCEEDED | 0.158724113s
+D, [2017-03-27T08:13:49.124450 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.count | STARTED | {"count"=>"Pairs", "query"=>{}}
+D, [2017-03-27T08:13:49.283836 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.count | SUCCEEDED | 0.15910988s
+D, [2017-03-27T08:13:49.444448 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.count | STARTED | {"count"=>"Pairs", "query"=>{}}
+D, [2017-03-27T08:13:49.603562 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.count | SUCCEEDED | 0.158913225s
+D, [2017-03-27T08:13:49.763348 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.count | STARTED | {"count"=>"Pairs", "query"=>{}}
+D, [2017-03-27T08:13:49.921982 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.count | SUCCEEDED | 0.15851116899999998s
+D, [2017-03-27T08:13:50.081215 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.count | STARTED | {"count"=>"Pairs", "query"=>{}}
+D, [2017-03-27T08:13:50.240153 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.count | SUCCEEDED | 0.158765713s
+D, [2017-03-27T08:13:50.399552 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.count | STARTED | {"count"=>"Pairs", "query"=>{}}
+D, [2017-03-27T08:13:50.558425 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.count | SUCCEEDED | 0.158738049s
+I, [2017-03-27T08:13:50.558975 #5878]  INFO -- :   Rendered pairs/_filter_form.html.haml (2231.8ms)
+D, [2017-03-27T08:13:50.718317 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.count | STARTED | {"count"=>"Pairs", "query"=>{"$and"=>[{"$and"=>[{"data_inicial"=>"20170324"}, {"nivel_confianca"=>{"$gte"=>95}}]}, {"sinal_entrada"=>4}]}}
+D, [2017-03-27T08:13:50.878380 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.count | SUCCEEDED | 0.1599401s
+D, [2017-03-27T08:13:50.881728 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Pairs", "filter"=>{"$and"=>[{"$and"=>[{"data_inicial"=>"20170324"}, {"nivel_confianca"=>{"$gte"=>95}}]}, {"sinal_entrada"=>4}]}, "limit"=>25, "skip"=>0, "sort"=>{"ativo_indep"=>1, "ativo_dep"=>1, "ADF_result"=>1}}
+D, [2017-03-27T08:13:51.041952 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.160110214s
+D, [2017-03-27T08:13:51.042959 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"ECOR3", "data_inicial"=>"20170324", "periodo"=>180}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:13:51.202696 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.159541226s
+D, [2017-03-27T08:13:51.204521 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"ABEV3", "ativo_dep"=>"ECOR3", "data_inicial"=>"20170324", "periodo"=>180}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:13:51.363847 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.159215094s
+D, [2017-03-27T08:13:51.364730 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"CESP6", "ativo_dep"=>"RSID3", "data_inicial"=>"20170324", "periodo"=>120}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:13:51.533593 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.168778603s
+D, [2017-03-27T08:13:51.534491 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"CESP6", "ativo_dep"=>"RSID3", "data_inicial"=>"20170324", "periodo"=>120}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:13:51.694653 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.16005777899999998s
+D, [2017-03-27T08:13:51.695887 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"CPFE3", "ativo_dep"=>"KLBN11", "data_inicial"=>"20170324", "periodo"=>180}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:13:51.855786 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.159618996s
+D, [2017-03-27T08:13:51.857529 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"CPFE3", "ativo_dep"=>"KLBN11", "data_inicial"=>"20170324", "periodo"=>180}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:13:52.017392 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.159677652s
+D, [2017-03-27T08:13:52.019136 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"CPFE3", "ativo_dep"=>"KLBN11", "data_inicial"=>"20170324", "periodo"=>160}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:13:52.179245 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.159938806s
+D, [2017-03-27T08:13:52.181037 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"CPFE3", "ativo_dep"=>"KLBN11", "data_inicial"=>"20170324", "periodo"=>160}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:13:52.340878 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.159700788s
+D, [2017-03-27T08:13:52.342108 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"CTIP3", "ativo_dep"=>"QUAL3", "data_inicial"=>"20170324", "periodo"=>120}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:13:52.502521 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.160254328s
+D, [2017-03-27T08:13:52.504841 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"CTIP3", "ativo_dep"=>"QUAL3", "data_inicial"=>"20170324", "periodo"=>120}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:13:52.665365 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.160276065s
+D, [2017-03-27T08:13:52.667789 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"LREN3", "ativo_dep"=>"BBAS3", "data_inicial"=>"20170324", "periodo"=>200}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:13:52.827213 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.159270645s
+D, [2017-03-27T08:13:52.828299 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"LREN3", "ativo_dep"=>"BBAS3", "data_inicial"=>"20170324", "periodo"=>200}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:13:52.987617 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.159223712s
+D, [2017-03-27T08:13:52.988500 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"RENT3", "ativo_dep"=>"MULT3", "data_inicial"=>"20170324", "periodo"=>160}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:13:53.148289 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.159695841s
+D, [2017-03-27T08:13:53.149226 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"RENT3", "ativo_dep"=>"MULT3", "data_inicial"=>"20170324", "periodo"=>160}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:13:53.309561 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.160124824s
+D, [2017-03-27T08:13:53.312279 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"RENT3", "ativo_dep"=>"MULT3", "data_inicial"=>"20170324", "periodo"=>140}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:13:53.472549 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.159999088s
+D, [2017-03-27T08:13:53.475360 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"ativo_indep"=>"RENT3", "ativo_dep"=>"MULT3", "data_inicial"=>"20170324", "periodo"=>140}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:13:53.635415 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.159926948s
+I, [2017-03-27T08:13:53.636978 #5878]  INFO -- :   Rendered pairs/_table.html.haml (3077.5ms)
+I, [2017-03-27T08:13:53.637051 #5878]  INFO -- :   Rendered pairs/index.html.haml within layouts/application (5310.4ms)
+I, [2017-03-27T08:13:53.643921 #5878]  INFO -- : Completed 200 OK in 11210ms (Views: 5318.8ms)
+I, [2017-03-27T08:14:19.154692 #5878]  INFO -- : Started GET "/residues/58d6226ea14f63006cf42b96" for 127.0.0.1 at 2017-03-27 08:14:19 -0300
+I, [2017-03-27T08:14:19.157046 #5878]  INFO -- : Processing by ResiduesController#show as HTML
+I, [2017-03-27T08:14:19.157134 #5878]  INFO -- :   Parameters: {"id"=>"58d6226ea14f63006cf42b96"}
+D, [2017-03-27T08:14:19.158362 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"Residues", "filter"=>{"_id"=>BSON::ObjectId('58d6226ea14f63006cf42b96')}}
+D, [2017-03-27T08:14:19.317546 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.159074847s
+I, [2017-03-27T08:14:19.529309 #5878]  INFO -- :   Rendering residues/show.html.haml within layouts/application
+I, [2017-03-27T08:14:19.537899 #5878]  INFO -- :   Rendered residues/show.html.haml within layouts/application (8.5ms)
+D, [2017-03-27T08:14:19.544976 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('58c736e3459ba90c2a6e1247')}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+D, [2017-03-27T08:14:19.703815 #5878] DEBUG -- : MONGODB | ds119618-a.mlab.com:19618 | cointegracao.find | SUCCEEDED | 0.15874220200000003s
+I, [2017-03-27T08:14:19.704296 #5878]  INFO -- : Completed 200 OK in 547ms (Views: 176.6ms)
+W, [2017-03-27T08:34:56.957018 #6991]  WARN -- : Creating scope :order. Overwriting existing method Pair.order.
+W, [2017-03-27T08:35:44.726612 #24113]  WARN -- : Creating scope :order. Overwriting existing method Pair.order.

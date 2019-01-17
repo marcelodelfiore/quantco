@@ -1,0 +1,20 @@
+.panel-body
+  = search_form_for @q, url: search_pairs_path, html: { method: :post }, class: "form-horizontal" do |f|
+    %fieldset.form-group
+      .row
+        %legend{:align => "Center"} Cointegração - Critérios de Seleção dos Pares
+      .row
+        .col-xs-12.col-sm-12.col-md-12.col-lg-2.top10
+          .input-group
+          = f.label :data_inicial_eq, "Data", class: "form-control"
+          = f.search_field :data_inicial_eq, class: "form-control"
+        .col-xs-12.col-sm-12.col-md-12.col-lg-3.top10
+          = f.label :nivel_confianca_gteq, "Nível Mínimo de Confiança", class: "form-control mask_confianca"
+          = f.select :nivel_confianca_gteq, options_for_select([['90%', 90], ['95%', 95], ['99%', 99]], @q.nivel_confianca_gteq), class: "form-control"
+        .col-xs-12.col-sm-12.col-md-12.col-lg-3.top10
+          = f.label :sinal_entrada_eq, "Ponta do Ativo independente", class: "form-control"
+          = f.select :sinal_entrada_eq, options_for_select([['Compra', 1], ['Venda', 4]], @q.sinal_entrada_eq), class: "form-control"
+        .col-xs-12.col-sm-6.col-md-3.top15.pull-right
+          = f.submit 'Procurar Pares', class: "btn btn-success pull-left"
+          <br> <br/>
+          = link_to "Limpar Critérios", request.path, class:"btn btn-danger pull-left"
